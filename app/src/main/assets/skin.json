@@ -1,0 +1,80 @@
+{
+com.badlogic.gdx.graphics.g2d.BitmapFont: {
+	font: {
+		file: font.fnt
+		scaledSize: -1
+		markupEnabled: false
+		flip: false
+	}
+}
+com.badlogic.gdx.graphics.Color: {
+	RGBA_254_254_254_255: {
+		r: 0.99607843
+		g: 0.99607843
+		b: 0.99607843
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable: {
+//	b_auto_game_button: {
+//		region: b_auto_game_button
+//		minWidth: 101
+//		minHeight: 90
+//	}
+//	b_info_button: {
+//		region: b_info_button
+//		minWidth: 13
+//		minHeight: 37
+//	}
+//	b_max_bet_button: {
+//		region: b_max_bet_button
+//		minWidth: 99
+//		minHeight: 90
+//	}
+//	b_spin_button: {
+//		region: b_spin_button
+//		minWidth: 238
+//		minHeight: 99
+//	}
+//	b_stop_auto_game_button: {
+//		region: b_stop_auto_game_button
+//		minWidth: 101
+//		minHeight: 90
+//	}
+//	s_1: {
+//		region: s_1
+//		minWidth: 208
+//		minHeight: 179
+//	}
+//	s_2: {
+//		region: s_2
+//		minWidth: 208
+//		minHeight: 179
+//	}
+//	s_3: {
+//		region: s_3
+//		minWidth: 208
+//		minHeight: 179
+//	}
+//	s_4: {
+//		region: s_4
+//		minWidth: 148
+//		minHeight: 162
+//	}
+//	s_5: {
+//		region: s_5
+//		minWidth: 182
+//		minHeight: 165
+//	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: font
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+}
