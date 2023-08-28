@@ -168,7 +168,11 @@ public class GameScreen implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 spinButton.setTouchable(Touchable.disabled);
-                startSpinning();
+                if (LabelNum.getNum(labelBalance) >= LabelNum.getNum(labelBet)
+                        && LabelNum.getNum(labelBalance) > 0
+                        && LabelNum.getNum(labelBet) > 0)  {
+                    startSpinning();
+                }
             }
         });
 
