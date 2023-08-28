@@ -172,6 +172,8 @@ public class GameScreen implements Screen {
                         && LabelNum.getNum(labelBalance) > 0
                         && LabelNum.getNum(labelBet) > 0)  {
                     startSpinning();
+                } else {
+                    spinButton.setTouchable(Touchable.enabled);
                 }
             }
         });
@@ -305,11 +307,12 @@ public class GameScreen implements Screen {
                 public void run() {
                     reels.get(finalIndex).spin();
                     checkForWin(reels.get(finalIndex));
-                    addBalance();
-                    LabelNum.setNum(labelBet, Math.min(LabelNum.getNum(labelBalance), LabelNum.getNum(labelBet)));
                     completedTasksCount++;
                     if (completedTasksCount == reels.size) {
                         completedTasksCount = 0;
+                        addBalance();
+                        LabelNum.setNum(labelBet, Math.min(LabelNum.getNum(labelBalance), LabelNum.getNum(labelBet)));
+                        System.out.println("---------------------");
                         spinButton.setTouchable(Touchable.enabled);
                     }
                 }
